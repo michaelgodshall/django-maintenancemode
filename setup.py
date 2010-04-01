@@ -1,8 +1,5 @@
-from ez_setup import use_setuptools
-use_setuptools()
-
 import os
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 version = '0.9.2'
 
@@ -23,9 +20,12 @@ setup(
     license = "BSD",
     platforms = ["any"],
     url='http://code.google.com/p/django-maintenancemode/',
-    download_url='',
-    packages=['maintenancemode', 'maintenancemode.conf',  'maintenancemode.conf.urls', 'maintenancemode.views'],
-    include_package_data = False,
+    packages=[
+        'maintenancemode',
+        'maintenancemode.conf',
+        'maintenancemode.conf.urls',
+        'maintenancemode.views'
+    ],
     classifiers=[
             'Development Status :: 4 - Beta',
             'Environment :: Web Environment',
@@ -36,5 +36,4 @@ setup(
             'Programming Language :: Python',
             'Topic :: Utilities',
     ],
-    zip_safe=False,
 )
