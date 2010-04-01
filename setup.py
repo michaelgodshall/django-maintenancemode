@@ -1,7 +1,7 @@
 import os
 from distutils.core import setup
 
-version = '0.9.2'
+version = '0.9.3a1'
 
 def read_file(name):
     return open(os.path.join(os.path.dirname(__file__), 
