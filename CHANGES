@@ -1,6 +1,14 @@
 Changes
 =======
 
+developement
+------------
+
+- Got rid of dependency on setuptools
+- Added ability to exclude specific paths from maintenance mode with the
+  ``MAINTENANCE_EXCLUDE_URLS`` setting.
+
+
 0.9.2
 -----
 - Fixed an issue with setuptools, thanks for reporting this ksato9700
